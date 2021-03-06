@@ -28,10 +28,16 @@ class GameScene: SKScene {
                 let ball = Ball(imageNamed: ballType)
                 ball.position = CGPoint(x: i, y: j)
                 ball.name = ballType
+                ball.physicsBody = SKPhysicsBody(circleOfRadius: ballRadius)
+                ball.physicsBody?.allowsRotation = false
+                ball.physicsBody?.friction = 0
+                ball.physicsBody?.restitution = 0
                 
                 addChild(ball)
             }
         }
+        // set the boundaries to be inside the frame but leave room for the score.
+        physicsBody = SKPhysicsBody(edgeLoopFrom: self.frame.inset(by: UIEdgeInsets(top: 100, left: 0, bottom: 0, right: 0)))
 
     }
     
