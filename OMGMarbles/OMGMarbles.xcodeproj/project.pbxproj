@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		55536F2825F5AB3E00EF257A /* Explosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = 55536F2725F5AB3E00EF257A /* Explosion.sks */; };
 		55BE4F5325F30FFA004B6C68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BE4F5225F30FFA004B6C68 /* AppDelegate.swift */; };
 		55BE4F5525F30FFA004B6C68 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 55BE4F5425F30FFA004B6C68 /* GameScene.sks */; };
 		55BE4F5925F30FFA004B6C68 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BE4F5825F30FFA004B6C68 /* GameScene.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		55536F2725F5AB3E00EF257A /* Explosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Explosion.sks; sourceTree = "<group>"; };
 		55BE4F4F25F30FFA004B6C68 /* OMGMarbles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OMGMarbles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55BE4F5225F30FFA004B6C68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55BE4F5425F30FFA004B6C68 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				55BE4F5225F30FFA004B6C68 /* AppDelegate.swift */,
 				55BE4F5425F30FFA004B6C68 /* GameScene.sks */,
 				55BE4F5825F30FFA004B6C68 /* GameScene.swift */,
+				55536F2725F5AB3E00EF257A /* Explosion.sks */,
 				55BE4F5A25F30FFA004B6C68 /* GameViewController.swift */,
 				55BE4F5C25F30FFA004B6C68 /* Main.storyboard */,
 				55BE4F5F25F30FFF004B6C68 /* Assets.xcassets */,
@@ -125,6 +128,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				55BE4F5E25F30FFA004B6C68 /* Main.storyboard in Resources */,
+				55536F2825F5AB3E00EF257A /* Explosion.sks in Resources */,
 				55BE4F5525F30FFA004B6C68 /* GameScene.sks in Resources */,
 				55BE4F6025F30FFF004B6C68 /* Assets.xcassets in Resources */,
 			);
