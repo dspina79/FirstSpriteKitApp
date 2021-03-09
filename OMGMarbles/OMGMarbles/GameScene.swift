@@ -121,6 +121,22 @@ class GameScene: SKScene {
             }
         }
         
+        if matchedBalls.count >= 6 {
+            // show OMG
+            let omg = SKSpriteNode(imageNamed: "omg")
+            omg.position = CGPoint(x: frame.midX, y: frame.midY)
+            omg.zPosition = 100
+            omg.yScale = 0.001
+            omg.xScale = 0.001
+            
+            addChild(omg)
+            
+            let appear = SKAction.group([SKAction.scale(to: 1, duration: 0.25), SKAction.fadeIn(withDuration: 0.25)])
+            let dissappear = SKAction.group([SKAction.scale(to: 2, duration: 0.25), SKAction.fadeOut(withDuration: 0.25)])
+            let sequence = SKAction.sequence([appear, SKAction.wait(forDuration: 0.25), dissappear])
+            omg.run(sequence)
+        }
+        
     }
     
     override func update(_ currentTime: TimeInterval) {
